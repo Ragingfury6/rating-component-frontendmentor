@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Rating</title>
+  </head>
+  <body>
+    <section class="card" data-side="front">
+      <div class="icon decoration">
+        <img src="./images/icon-star.svg" aria-hidden="true" />
+      </div>
+      <div>
+        <h2>How did we do?</h2>
+        <p class="description">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+      </div>
+      <form>
+        <ul>
+          <li class="icon" data-value="1">
+            <input type="radio" class="visually-hidden" name="rating" /><label
+              for="rating"
+              >1</label
+            >
+          </li>
+          <li class="icon" data-value="2">
+            <input type="radio" class="visually-hidden" name="rating" /><label
+              for="rating"
+              >2</label
+            >
+          </li>
+          <li class="icon" data-value="3">
+            <input type="radio" class="visually-hidden" name="rating" /><label
+              for="rating"
+              >3</label
+            >
+          </li>
+          <li class="icon" data-value="4">
+            <input type="radio" class="visually-hidden" name="rating" /><label
+              for="rating"
+              >4</label
+            >
+          </li>
+          <li class="icon" data-value="5">
+            <input type="radio" class="visually-hidden" name="rating" /><label
+              for="rating"
+              >5</label
+            >
+          </li>
+        </ul>
+        <button type="submit" class="button">Submit</button>
+      </form>
+    </section>
+    <section class="card hidden text-center" data-side="back">
+      <div class="centered">
+        <img src="./images/illustration-thank-you.svg" aria-hidden="true" />
+      </div>
+      <div class="icon decoration" data-type="stretch">
+        <p>You selected <span class="selection"></span> out of 5</p>
+      </div>
+      <h2>Thank you!</h2>
+      <p class="description">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don&#39t hesitate to get in touch!
+      </p>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
